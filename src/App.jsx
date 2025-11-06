@@ -1,12 +1,14 @@
 import { useState } from 'react'
 import './App.css'
 import { HashRouter, Route, Routes } from 'react-router'
+import Home from '../components/home.jsx'
+import Plan from '../components/plan.jsx'
 
 function App() {
   return <HashRouter>
     <Routes>
-      <Route path = "/" element={<h1>Home</h1>} />
-      <Route path = "/plan" element={<h1>star map</h1>} />
+      <Route path = "/" element={<Home/>}></Route>
+      <Route path = "/plan" element={<Plan/>}></Route>
     </Routes>
   </HashRouter>
 
