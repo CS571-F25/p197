@@ -1,0 +1,21 @@
+[{
+  "name": "Orion",
+  "season": "winter",
+  "stars": ["Betelgeuse", "Rigel", "Bellatrix", "Saiph"],
+  "origin": "Greek mythology; representation of a hunter",
+  "image": "orion.svg"
+},
+{
+  "name": "Ursa Major",
+  "season": "spring",
+  "stars": ["Alioth", "Mizar", "Alkaid", "Dubhe"],
+  "origin": "Various (Latin name means 'Great Bear')",
+  "image": "ursa-major.svg"
+},
+{
+  "name": "Scorpius",
+  "season": "summer",
+  "stars": ["Antares", "Shaula", "Sargas"],
+  "origin": "Greek mythology; the scorpion that fought Orion",
+  "image": "scorpius.svg"
+}]

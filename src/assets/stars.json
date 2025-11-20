@@ -1,0 +1,50 @@
+[
+  {
+    "id": "sirius",
+    "name": "Sirius",
+    "image": "sirius.svg",
+    "description": "Brightest star in the night sky, located in the constellation Canis Major.",
+    "location": "Canis Major",
+    "luminosity": 25.4
+  },
+  {
+    "id": "betelgeuse",
+    "name": "Betelgeuse",
+    "image": "betelgeuse.svg",
+    "description": "A red supergiant star in the constellation Orion, notable for its size and variability.",
+    "location": "Orion",
+    "luminosity": 1200
+  },
+  {
+    "id": "polaris",
+    "name": "Polaris",
+    "image": "polaris.svg",
+    "description": "Also known as the North Star, used for navigation because it sits nearly motionless in the sky.",
+    "location": "Ursa Minor",
+    "luminosity": 220
+  },
+  {
+    "id": "vega",
+    "name": "Vega",
+    "image": "vega.svg",
+    "description": "A bright star in the constellation Lyra, often used as a photometric standard.",
+    "location": "Lyra",
+    "luminosity": 40
+  },
+  {
+    "id": "rigel",
+    "name": "Rigel",
+    "image": "rigel.svg",
+    "description": "A blue-white supergiant star in Orion, one of the brightest stars visible from Earth.",
+    "location": "Orion",
+    "luminosity": 120000
+  },
+  {
+    "id": "antares",
+    "name": "Antares",
+    "image": "antares.svg",
+    "description": "A red supergiant in the constellation Scorpius; often compared to Betelgeuse.",
+    "location": "Scorpius",
+    "luminosity": 60000
+  }
+]

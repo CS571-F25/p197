@@ -5,7 +5,6 @@
 
   color-scheme: light dark;
   color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
@@ -22,12 +21,22 @@ a:hover {
   color: #535bf2;
 }
 
+html, body, #root {
+  height: 100%;
+}
+
 body {
   margin: 0;
   display: flex;
-  place-items: center;
+  flex-direction: column;
+  align-items: stretch;
   min-width: 320px;
   min-height: 100vh;
+  /* match the dark page background so padding area isn't white */
+  background: linear-gradient(180deg, #041934 0%, #031427 100%);
+  color: #fff;
+  /* reserve space for the fixed navbar so content doesn't sit under it */
+  padding-top: 56px;
 }
 
 h1 {
@@ -65,4 +74,231 @@ button:focus-visible {
   button {
     background-color: #f9f9f9;
   }
+}
+
+/* App layout and navbar styles */
+.app-main {
+  width: 100%;
+  max-width: none;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  min-height: calc(100vh - 56px);
+}
+
+.nav-bar {
+  width: 100%;
+  background: linear-gradient(90deg, #1a1a1a, #111);
+  border-bottom: 1px solid rgba(255,255,255,0.04);
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 56px;
+  z-index: 40;
+  display: flex;
+  align-items: center;
+}
+.nav-inner {
+  width: 100%;
+  display: flex;
+  gap: 1rem;
+  padding: 0 1rem;
+  align-items: center;
+  justify-content: flex-start;
+}
+.nav-link {
+  color: rgba(255,255,255,0.9);
+  text-decoration: none;
+  padding: 0.45rem 0.65rem;
+  border-radius: 6px;
+  transition: background-color 0.15s, color 0.15s;
+}
+.nav-link:hover {
+  background: rgba(255,255,255,0.03);
+}
+.nav-link.active {
+  background: rgba(100,108,255,0.12);
+  color: #cfd6ff;
+}
+
+.page-content {
+  background: linear-gradient(180deg, rgba(255,255,255,0.02), transparent);
+  box-sizing: border-box;
+  width: 100%;
+  min-height: 100%;
+  margin: 0;
+  padding: 1.5rem;
+}
+
+/* Inner centered column so page background is full-bleed while content is centered */
+.page-inner {
+  max-width: 980px;
+  margin: 0 auto;
+  padding: 0.75rem;
+  box-sizing: border-box;
+}
+
+/* Stars page specific styles */
+.plan-page {
+  color: #ffffff;
+}
+
+.bookmarks-page {
+  color: #ffffff;
+}
+
+.bookmarks-page .star-card {
+  background: #000000;
+  color: #ffffff;
+  border: 1px solid rgba(255,255,255,0.06);
+  box-shadow: 0 1px 0 rgba(255,255,255,0.02) inset;
+}
+.bookmarks-page .star-card .star-card-title,
+.bookmarks-page .star-card .star-card-desc,
+.bookmarks-page .star-card .star-card-lum,
+.bookmarks-page .star-card .star-card-location,
+.bookmarks-page .star-card .star-card-link {
+  color: #ffffff;
+}
+.bookmarks-page .star-card a { color: #9fc7ff; }
+
+/* Star cards: black background + white text on Stars page (and generally) */
+.plan-page .star-card {
+  background: #000000;
+  color: #ffffff;
+  border: 1px solid rgba(255,255,255,0.06);
+}
+.plan-page .star-card .star-card-title,
+.plan-page .star-card .star-card-desc,
+.plan-page .star-card .star-card-lum,
+.plan-page .star-card .star-card-location,
+.plan-page .star-card .star-card-link {
+  color: #ffffff;
+}
+.plan-page .star-card a {
+  color: #9fc7ff;
+}
+
+/* Slightly darker card border for contrast */
+.plan-page .star-card {
+  box-shadow: 0 1px 0 rgba(255,255,255,0.02) inset;
+}
+
+/* Constellation card visual tweaks (reuse star-card layout but with accent) */
+.const-card {
+  border-left: 4px solid rgba(158,197,255,0.7);
+}
+.plan-page .const-card {
+  background: #02050a;
+}
+
+/* Star card list */
+.star-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1rem;
+  margin-top: 1rem;
+}
+.star-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background: rgba(255,255,255,0.02);
+  border: 1px solid rgba(255,255,255,0.04);
+  padding: 0.85rem;
+  border-radius: 8px;
+}
+.star-card-media {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 0.6rem;
+}
+.star-card-img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 6px;
+  object-fit: cover;
+}
+.star-card-location {
+  margin: 0 0 0.4rem 0;
+  color: rgba(0, 0, 0, 0.8);
+  font-size: 0.95rem;
+}
+.star-card-title {
+  margin: 0 0 0.35rem 0;
+  font-size: 1.05rem;
+}
+.star-card-desc {
+  margin: 0 0 0.6rem 0;
+  color: rgba(0, 0, 0, 0.8);
+}
+.star-card-actions {
+  display: flex;
+  justify-content: flex-end;
+}
+.star-remove {
+  background: transparent;
+  border: 1px solid rgba(255,255,255,0.06);
+  color: rgba(255,255,255,0.9);
+  padding: 0.35rem 0.6rem;
+  border-radius: 6px;
+  cursor: pointer;
+}
+.star-remove:hover { opacity: 0.9; }
+
+.star-bookmark {
+  background: rgba(88, 88, 88, 0.14);
+  border: 1px solid rgba(100,108,255,0.18);
+  color: #ffffffb2;
+  padding: 0.35rem 0.6rem;
+  border-radius: 6px;
+  margin-right: 0.5rem;
+  cursor: pointer;
+}
+.star-bookmark:hover { opacity: 0.95; }
+
+/* Stars page tweaks */
+.page-content > h1 {
+  margin-top: 0;
+}
+
+.star-card-lum {
+  margin: 0.35rem 0 0.6rem 0;
+  color: rgba(0, 0, 0, 0.8);
+  font-size: 0.95rem;
+}
+
+.star-bookmarked-icon {
+  display: inline-block;
+  color: #ffd24d;
+  font-size: 1.2rem;
+  margin-right: 0.6rem;
+}
+.star-bookmark[disabled], .star-bookmark.disabled {
+  opacity: 0.45;
+  cursor: default;
+}
+
+/* Controls on the bookmarks page */
+.bookmark-actions {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+}
+.bookmark-controls button {
+  margin-left: 0.5rem;
+}
+
+@media (max-width: 520px) {
+  .bookmark-actions { flex-direction: column; align-items: flex-start; }
+  .bookmark-controls { margin-top: 0.5rem; }
+}
+
+@media (prefers-color-scheme: light) {
+  .nav-bar { background: #f9f9f9; border-bottom-color: rgba(0,0,0,0.05); }
+  .nav-link { color: #213547; }
+  .nav-link.active { background: rgba(100,108,255,0.12); color: #213547; }
 }
