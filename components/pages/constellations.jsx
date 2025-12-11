@@ -128,13 +128,14 @@ export default function Constellations() {
 
   return (
     <div className="page-content plan-page">
-      <h1 style={{
-        background: 'linear-gradient(135deg, #646cff, #8b92ff)',
-        WebkitBackgroundClip: 'text',
-        WebkitTextFillColor: 'transparent',
-        backgroundClip: 'text'
-      }}>Constellations</h1>
-      <div style={{ marginBottom: '1rem', display: 'flex', alignItems: 'center', gap: '0.75rem', flexWrap: 'wrap' }}>
+      <main>
+        <h1 style={{
+          background: 'linear-gradient(135deg, #646cff, #8b92ff)',
+          WebkitBackgroundClip: 'text',
+          WebkitTextFillColor: 'transparent',
+          backgroundClip: 'text'
+        }}>Constellations</h1>
+        <div style={{ marginBottom: '1rem', display: 'flex', alignItems: 'center', gap: '0.75rem', flexWrap: 'wrap' }}>
         <input
           aria-label="Search constellations"
           placeholder="Search constellations..."
@@ -165,6 +166,7 @@ export default function Constellations() {
           ))}
         </Row>
       </Container>
+      </main>
       <Footer />
     </div>
   );

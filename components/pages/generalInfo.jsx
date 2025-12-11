@@ -14,9 +14,10 @@ export default function GeneralInfo() {
 
     return (
         <div className="page-content general-info-page">
-            <h1>Introduction to Stars</h1>
+            <main>
+                <h1>Introduction to Stars</h1>
 
-            <section className="info-section">
+                <section className="info-section">
                 <h2>What is a Constellation?</h2>
                 <div className="info-content">
                     <div className="info-text">
@@ -234,6 +235,7 @@ export default function GeneralInfo() {
                     </div>
                 </div>
             </section>
+            </main>
 
             <Footer />
 

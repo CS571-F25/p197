@@ -3,9 +3,10 @@ import Footer from '../footer.jsx';
 export default function History() {
     return (
         <div className="page-content history-page">
-            <h1>History of Constellations</h1>
+            <main>
+                <h1>History of Constellations</h1>
 
-            <section className="info-section">
+                <section className="info-section">
                 <h2>Origins and Creation</h2>
                 <div className="info-content-full">
                     <div className="info-text">
@@ -271,6 +272,7 @@ export default function History() {
                     </div>
                 </div>
             </section>
+            </main>
 
             <Footer />
         </div>

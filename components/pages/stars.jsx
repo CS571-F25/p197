@@ -137,13 +137,14 @@ export default function Stars (props) {
 
     return (
         <div className="page-content plan-page">
-            <h1 style={{
-                background: 'linear-gradient(135deg, #646cff, #8b92ff)',
-                WebkitBackgroundClip: 'text',
-                WebkitTextFillColor: 'transparent',
-                backgroundClip: 'text'
-            }}>Stars</h1>
-            <div style={{ marginBottom: '1rem', display: 'flex', alignItems: 'center', gap: '0.75rem', flexWrap: 'wrap' }}>
+            <main>
+                <h1 style={{
+                    background: 'linear-gradient(135deg, #646cff, #8b92ff)',
+                    WebkitBackgroundClip: 'text',
+                    WebkitTextFillColor: 'transparent',
+                    backgroundClip: 'text'
+                }}>Stars</h1>
+                <div style={{ marginBottom: '1rem', display: 'flex', alignItems: 'center', gap: '0.75rem', flexWrap: 'wrap' }}>
                 <input
                     aria-label="Search stars"
                     placeholder="Search stars..."
@@ -174,6 +175,7 @@ export default function Stars (props) {
                     ))}
                 </Row>
             </Container>
+            </main>
             <Footer />
         </div>
     );

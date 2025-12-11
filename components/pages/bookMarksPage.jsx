@@ -121,13 +121,14 @@ export default function BookMarksPage() {
 
   return (
     <div className="page-content plan-page bookmarks-page">
-      <div className="bookmark-actions">
-        <h1 style={{
-          background: 'linear-gradient(135deg, #646cff, #8b92ff)',
-          WebkitBackgroundClip: 'text',
-          WebkitTextFillColor: 'transparent',
-          backgroundClip: 'text'
-        }}>Bookmarks</h1>
+      <main>
+        <div className="bookmark-actions">
+          <h1 style={{
+            background: 'linear-gradient(135deg, #646cff, #8b92ff)',
+            WebkitBackgroundClip: 'text',
+            WebkitTextFillColor: 'transparent',
+            backgroundClip: 'text'
+          }}>Bookmarks</h1>
         <div style={{ display: 'flex', gap: '0.5rem', alignItems: 'center' }}>
           <input
             aria-label="Search bookmarks"
@@ -205,7 +206,7 @@ export default function BookMarksPage() {
                     <Row xs={1} sm={2} md={4} lg={6} className="g-3">
                       {sortedStars.map((it) => (
                         <Col key={it.id || it.name}>
-                          <StarCard item={it} onRemove={remove} allConstellations={allConstellations} />
+                          <StarCard item={{...it, _bookmarked: true}} onRemove={remove} allConstellations={allConstellations} />
                         </Col>
                       ))}
                     </Row>
@@ -244,6 +245,7 @@ export default function BookMarksPage() {
           );
         })()
       )}
+      </main>
     </div>
   );
 }

@@ -9,6 +9,19 @@ export default function ConstCard({ item = {}, onRemove, onSelect, onBookmark, s
   const [selectedStar, setSelectedStar] = useState(null);
   const [isStarModalOpen, setIsStarModalOpen] = useState(false);
   const isBookmarked = !!item._bookmarked || showBookmarked;
+  const [bookmarkedStarIds, setBookmarkedStarIds] = React.useState(new Set());
+
+  // Load bookmarked stars from localStorage
+  React.useEffect(() => {
+    try {
+      const raw = localStorage.getItem('bookmarks');
+      const existing = raw ? JSON.parse(raw) : [];
+      const starIds = new Set(existing.filter(b => b.type === 'star' || b.luminosity !== undefined).map(b => b.id));
+      setBookmarkedStarIds(starIds);
+    } catch (err) {
+      console.error('Failed to load bookmarks', err);
+    }
+  }, [isStarModalOpen]);
 
   // Create a map of star names to star data for quick lookup
   const starDataMap = React.useMemo(() => {
@@ -54,6 +67,47 @@ export default function ConstCard({ item = {}, onRemove, onSelect, onBookmark, s
   const handleStarImageClick = (e) => {
     e.stopPropagation();
     // Toggle star image enlargement (reuse the same state)
+  };
+
+  const handleBookmarkStar = (star) => {
+    try {
+      const raw = localStorage.getItem('bookmarks');
+      const existing = raw ? JSON.parse(raw) : [];
+      const exists = Array.isArray(existing) && existing.some((it) => it.id === star.id);
+      if (exists) {
+        window.alert('Already bookmarked');
+        return;
+      }
+      const toSave = { ...star, type: 'star' };
+      const next = [toSave, ...(Array.isArray(existing) ? existing : [])];
+      localStorage.setItem('bookmarks', JSON.stringify(next));
+      setBookmarkedStarIds(prev => {
+        const newSet = new Set(prev);
+        newSet.add(star.id);
+        return newSet;
+      });
+      window.alert('Bookmarked');
+    } catch (e) {
+      console.error('Failed to bookmark', e);
+      window.alert('Failed to bookmark');
+    }
+  };
+
+  const handleRemoveStar = (id) => {
+    if (!window.confirm('Remove this bookmark?')) return;
+    try {
+      const raw = localStorage.getItem('bookmarks');
+      const existing = raw ? JSON.parse(raw) : [];
+      const next = existing.filter((it) => it.id !== id);
+      localStorage.setItem('bookmarks', JSON.stringify(next));
+      setBookmarkedStarIds(prev => {
+        const newSet = new Set(prev);
+        newSet.delete(id);
+        return newSet;
+      });
+    } catch (e) {
+      console.error('Failed to remove bookmark', e);
+    }
   };
 
   const renderStarList = (starsList, isInModal = false) => {
@@ -148,6 +202,9 @@ export default function ConstCard({ item = {}, onRemove, onSelect, onBookmark, s
         onClose={handleCloseStarModal}
         onImageClick={handleStarImageClick}
         isImageEnlarged={false}
+        isBookmarked={selectedStar && bookmarkedStarIds.has(selectedStar.id)}
+        onBookmark={handleBookmarkStar}
+        onRemove={handleRemoveStar}
       />
     </>
   );
