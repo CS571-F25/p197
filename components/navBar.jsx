@@ -15,6 +15,8 @@ export default function NavBar() {
     <nav className="nav-bar">
       <div className="nav-inner">
         <a className={linkClass('#/')} href="#/">Home</a>
+        <a className={linkClass('#/general-info')} href="#/general-info">Introduction</a>
+        <a className={linkClass('#/history')} href="#/history">History</a>
         <a className={linkClass('#/stars')} href="#/stars">Stars</a>
         <a className={linkClass('#/constellations')} href="#/constellations">Constellations</a>
         <a className={linkClass('#/bookmarks')} href="#/bookmarks">Bookmarks</a>

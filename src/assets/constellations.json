@@ -1,21 +1,794 @@
-[{
-  "name": "Orion",
-  "season": "winter",
-  "stars": ["Betelgeuse", "Rigel", "Bellatrix", "Saiph"],
-  "origin": "Greek mythology; representation of a hunter",
-  "image": "orion.svg"
-},
-{
-  "name": "Ursa Major",
-  "season": "spring",
-  "stars": ["Alioth", "Mizar", "Alkaid", "Dubhe"],
-  "origin": "Various (Latin name means 'Great Bear')",
-  "image": "ursa-major.svg"
-},
-{
-  "name": "Scorpius",
-  "season": "summer",
-  "stars": ["Antares", "Shaula", "Sargas"],
-  "origin": "Greek mythology; the scorpion that fought Orion",
-  "image": "scorpius.svg"
-}]
+[
+  {
+    "name": "Andromeda",
+    "nickname": "Daughter of Cepheus",
+    "hemisphere": "Northern",
+    "season": "Autumn",
+    "stars": ["Alpheratz", "Mirach", "Almach"],
+    "origin": "Greek mythology; Princess Andromeda, daughter of Cepheus and Cassiopeia, chained to a rock and saved by Perseus",
+    "image": "andromeda.jpg"
+  },
+  {
+    "name": "Antlia",
+    "nickname": "the Air Pump",
+    "hemisphere": "Southern",
+    "season": "Spring",
+    "stars": ["Alpha Antliae", "Epsilon Antliae", "Iota Antliae"],
+    "origin": "Created by Nicolas Louis de Lacaille in 1756; represents an air pump",
+    "image": "antlia.jpg"
+  },
+  {
+    "name": "Apus",
+    "nickname": "the Bird of Paradise",
+    "hemisphere": "Southern",
+    "season": "Summer",
+    "stars": ["Alpha Apodis", "Gamma Apodis", "Beta Apodis"],
+    "origin": "Created by Petrus Plancius in the late 16th century; represents the bird of paradise",
+    "image": "apus.jpg"
+  },
+  {
+    "name": "Aquarius",
+    "nickname": "the Water Bearer",
+    "hemisphere": "Southern",
+    "season": "Autumn",
+    "stars": ["Sadalsuud", "Sadalmelik", "Skat", "Sadachbia"],
+    "origin": "Ancient Babylonian; the Water Bearer, associated with Ganymede in Greek mythology",
+    "image": "aquarius.jpg"
+  },
+  {
+    "name": "Aquila",
+    "nickname": "the Eagle",
+    "hemisphere": "Northern",
+    "season": "Autumn",
+    "stars": ["Altair", "Tarazed", "Okab", "Alshain"],
+    "origin": "Greek mythology; the Eagle that carried Zeus's thunderbolts",
+    "image": "aquila.jpg"
+  },
+  {
+    "name": "Ara",
+    "nickname": "the Altar",
+    "hemisphere": "Southern",
+    "season": "Summer",
+    "stars": ["Beta Arae", "Alpha Arae", "Zeta Arae", "Gamma Arae"],
+    "origin": "Greek mythology; the Altar where the gods made offerings before battle with the Titans",
+    "image": "ara.jpg"
+  },
+  {
+    "name": "Aries",
+    "nickname": "the Ram",
+    "hemisphere": "Northern",
+    "season": "Winter",
+    "stars": ["Hamal", "Sheratan", "Mesarthim", "Botein"],
+    "origin": "Greek mythology; the Ram whose golden fleece was sought by Jason and the Argonauts",
+    "image": "aries.jpg"
+  },
+  {
+    "name": "Auriga",
+    "nickname": "the Charioteer",
+    "hemisphere": "Northern",
+    "season": "Winter",
+    "stars": ["Capella", "Menkalinan", "Mahasim", "Theta Aurigae"],
+    "origin": "Greek mythology; the Charioteer, often associated with Erichthonius of Athens",
+    "image": "auriga.jpg"
+  },
+  {
+    "name": "Boötes",
+    "nickname": "the Herdsman",
+    "hemisphere": "Northern",
+    "season": "Summer",
+    "stars": ["Arcturus", "Izar", "Muphrid", "Nekkar"],
+    "origin": "Greek mythology; the Herdsman or Plowman, associated with Arcas or Icarius",
+    "image": "bootes.jpg"
+  },
+  {
+    "name": "Caelum",
+    "nickname": "the Engraving Tool",
+    "hemisphere": "Southern",
+    "season": "Winter",
+    "stars": ["Alpha Caeli", "Gamma Caeli", "Beta Caeli"],
+    "origin": "Created by Nicolas Louis de Lacaille in 1756; represents a sculptor's chisel",
+    "image": "caelum.jpg"
+  },
+  {
+    "name": "Camelopardalis",
+    "nickname": "the Giraffe",
+    "hemisphere": "Northern Circumpolar",
+    "season": "Winter",
+    "stars": ["Beta Camelopardalis", "CS Camelopardalis", "Alpha Camelopardalis"],
+    "origin": "Created by Petrus Plancius in 1612; represents a giraffe",
+    "image": "camelopardalis.jpg"
+  },
+  {
+    "name": "Cancer",
+    "nickname": "the Crab",
+    "hemisphere": "Northern",
+    "season": "Spring",
+    "stars": ["Tarf", "Asellus Australis", "Acubens", "Asellus Borealis"],
+    "origin": "Greek mythology; the Crab sent by Hera to distract Hercules during his battle with the Hydra",
+    "image": "cancer.jpg"
+  },
+  {
+    "name": "Canes Venatici",
+    "nickname": "the Hunting Dogs",
+    "hemisphere": "Northern",
+    "season": "Spring",
+    "stars": ["Cor Caroli", "Chara", "Beta CVn"],
+    "origin": "Created by Johannes Hevelius in 1687; represents the Hunting Dogs of Boötes",
+    "image": "canes-venatici.jpg"
+  },
+  {
+    "name": "Canis Major",
+    "nickname": "the Greater Dog",
+    "hemisphere": "Southern",
+    "season": "Winter",
+    "stars": ["Sirius", "Adhara", "Wezen", "Mirzam"],
+    "origin": "Greek mythology; the Greater Dog, one of Orion's hunting dogs",
+    "image": "canis-major.jpg"
+  },
+  {
+    "name": "Canis Minor",
+    "nickname": "the Lesser Dog",
+    "hemisphere": "Northern",
+    "season": "Spring",
+    "stars": ["Procyon", "Gomeisa"],
+    "origin": "Greek mythology; the Lesser Dog, often associated with Maera or one of Orion's dogs",
+    "image": "canis-minor.jpg"
+  },
+  {
+    "name": "Capricornus",
+    "nickname": "the Sea Goat",
+    "hemisphere": "Southern",
+    "season": "Autumn",
+    "stars": ["Deneb Algedi", "Dabih", "Algedi", "Nashira"],
+    "origin": "Greek mythology; the Sea Goat, associated with the god Pan",
+    "image": "capricornus.jpg"
+  },
+  {
+    "name": "Carina",
+    "nickname": "the Keel",
+    "hemisphere": "Southern",
+    "season": "Spring",
+    "stars": ["Canopus", "Miaplacidus", "Avior", "Aspidiske"],
+    "origin": "Part of the ancient constellation Argo Navis; represents the Keel of Jason's ship",
+    "image": "carina.jpg"
+  },
+  {
+    "name": "Cassiopeia",
+    "nickname": "the Queen",
+    "hemisphere": "Northern Circumpolar",
+    "season": "Autumn",
+    "stars": ["Schedar", "Caph", "Gamma Cassiopeiae", "Ruchbah"],
+    "origin": "Greek mythology; Queen Cassiopeia, mother of Andromeda, punished for her vanity",
+    "image": "cassiopeia.jpg"
+  },
+  {
+    "name": "Centaurus",
+    "nickname": "the Centaur",
+    "hemisphere": "Southern",
+    "season": "Spring",
+    "stars": ["Alpha Centauri", "Hadar", "Menkent", "Gamma Centauri"],
+    "origin": "Greek mythology; the Centaur, often identified as Chiron the wise centaur",
+    "image": "centaurus.jpg"
+  },
+  {
+    "name": "Cepheus",
+    "nickname": "the King",
+    "hemisphere": "Northern Circumpolar",
+    "season": "Autumn",
+    "stars": ["Alderamin", "Errai", "Alfirk", "Zeta Cephei"],
+    "origin": "Greek mythology; King Cepheus of Ethiopia, husband of Cassiopeia and father of Andromeda",
+    "image": "cepheus.jpg"
+  },
+  {
+    "name": "Cetus",
+    "nickname": "the Sea Monster",
+    "hemisphere": "Southern",
+    "season": "Winter",
+    "stars": ["Diphda", "Menkar", "Mira", "Tau Ceti"],
+    "origin": "Greek mythology; the sea monster sent to devour Andromeda",
+    "image": "cetus.jpg"
+  },
+  {
+    "name": "Chamaeleon",
+    "nickname": "the Chameleon",
+    "hemisphere": "Southern Circumpolar",
+    "season": "Spring",
+    "stars": ["Alpha Chamaeleontis", "Gamma Chamaeleontis", "Beta Chamaeleontis"],
+    "origin": "Created by Petrus Plancius in the late 16th century; represents a chameleon",
+    "image": "chamaeleon.jpg"
+  },
+  {
+    "name": "Circinus",
+    "nickname": "the Compass",
+    "hemisphere": "Southern",
+    "season": "Summer",
+    "stars": ["Alpha Circini", "Beta Circini", "Gamma Circini"],
+    "origin": "Created by Nicolas Louis de Lacaille in 1756; represents a compass (drafting tool)",
+    "image": "circinus.jpg"
+  },
+  {
+    "name": "Columba",
+    "nickname": "the Dove",
+    "hemisphere": "Southern",
+    "season": "Winter",
+    "stars": ["Phact", "Wazn", "Epsilon Columbae", "Delta Columbae"],
+    "origin": "Created by Petrus Plancius in 1592; represents the Dove that Noah sent from the Ark",
+    "image": "columba.jpg"
+  },
+  {
+    "name": "Coma Berenices",
+    "nickname": "Berenice's Hair",
+    "hemisphere": "Northern",
+    "season": "Spring",
+    "stars": ["Beta Comae Berenices", "Diadem", "Gamma Comae Berenices"],
+    "origin": "Named after Queen Berenice II of Egypt who sacrificed her hair to the gods",
+    "image": "coma-berenices.jpg"
+  },
+  {
+    "name": "Corona Australis",
+    "nickname": "the Southern Crown",
+    "hemisphere": "Southern",
+    "season": "Summer",
+    "stars": ["Meridiana", "Beta Coronae Australis", "Gamma Coronae Australis"],
+    "origin": "Greek; the Southern Crown, sometimes associated with the crown of Sagittarius",
+    "image": "corona-australis.jpg"
+  },
+  {
+    "name": "Corona Borealis",
+    "nickname": "the Northern Crown",
+    "hemisphere": "Northern",
+    "season": "Summer",
+    "stars": ["Alphecca", "Nusakan", "Gamma Coronae Borealis", "Theta Coronae Borealis"],
+    "origin": "Greek mythology; the Northern Crown, the crown of Ariadne given by Dionysus",
+    "image": "corona-borealis.jpg"
+  },
+  {
+    "name": "Corvus",
+    "nickname": "the Crow",
+    "hemisphere": "Southern",
+    "season": "Spring",
+    "stars": ["Gienah", "Kraz", "Algorab", "Minkar"],
+    "origin": "Greek mythology; the Crow, sacred bird of Apollo sent to fetch water",
+    "image": "corvus.jpg"
+  },
+  {
+    "name": "Crater",
+    "nickname": "the Cup",
+    "hemisphere": "Southern",
+    "season": "Spring",
+    "stars": ["Delta Crateris", "Alpha Crateris", "Gamma Crateris", "Beta Crateris"],
+    "origin": "Greek mythology; the Cup of Apollo, associated with the Corvus myth",
+    "image": "crater.jpg"
+  },
+  {
+    "name": "Crux",
+    "nickname": "the Southern Cross",
+    "hemisphere": "Southern Circumpolar",
+    "season": "Spring",
+    "stars": ["Acrux", "Mimosa", "Gacrux", "Imai"],
+    "origin": "Known since ancient times; the Southern Cross, used for navigation in the southern hemisphere",
+    "image": "crux.jpg"
+  },
+  {
+    "name": "Cygnus",
+    "nickname": "the Swan",
+    "hemisphere": "Northern",
+    "season": "Autumn",
+    "stars": ["Deneb", "Sadr", "Gienah", "Albireo"],
+    "origin": "Greek mythology; the Swan, associated with Zeus disguised as a swan to seduce Leda",
+    "image": "cygnus.jpg"
+  },
+  {
+    "name": "Delphinus",
+    "nickname": "the Dolphin",
+    "hemisphere": "Northern",
+    "season": "Autumn",
+    "stars": ["Rotanev", "Sualocin", "Gamma Delphini", "Delta Delphini"],
+    "origin": "Greek mythology; the Dolphin that helped Poseidon find Amphitrite",
+    "image": "delphinus.jpg"
+  },
+  {
+    "name": "Dorado",
+    "nickname": "the Swordfish",
+    "hemisphere": "Southern",
+    "season": "Winter",
+    "stars": ["Alpha Doradus", "Beta Doradus", "Gamma Doradus"],
+    "origin": "Created by Petrus Plancius in the late 16th century; represents the swordfish or mahi-mahi",
+    "image": "dorado.jpg"
+  },
+  {
+    "name": "Draco",
+    "nickname": "the Dragon",
+    "hemisphere": "Northern Circumpolar",
+    "season": "Summer",
+    "stars": ["Eltanin", "Rastaban", "Thuban", "Aldibain"],
+    "origin": "Greek mythology; the Dragon, often identified as Ladon guarding the golden apples",
+    "image": "draco.jpg"
+  },
+  {
+    "name": "Equuleus",
+    "nickname": "the Little Horse",
+    "hemisphere": "Northern",
+    "season": "Autumn",
+    "stars": ["Kitalpha", "Delta Equulei", "Gamma Equulei", "Beta Equulei"],
+    "origin": "Greek; the Little Horse or Foal, possibly Celeris, brother of Pegasus",
+    "image": "equuleus.jpg"
+  },
+  {
+    "name": "Eridanus",
+    "nickname": "the River",
+    "hemisphere": "Southern",
+    "season": "Winter",
+    "stars": ["Achernar", "Cursa", "Zaurak", "Rana"],
+    "origin": "Greek mythology; the River, often associated with the Nile or the mythical river Phaethon fell into",
+    "image": "eridanus.jpg"
+  },
+  {
+    "name": "Fornax",
+    "nickname": "the Furnace",
+    "hemisphere": "Southern",
+    "season": "Winter",
+    "stars": ["Alpha Fornacis", "Beta Fornacis", "Nu Fornacis"],
+    "origin": "Created by Nicolas Louis de Lacaille in 1756; represents a chemical furnace",
+    "image": "fornax.jpg"
+  },
+  {
+    "name": "Gemini",
+    "nickname": "the Twins",
+    "hemisphere": "Northern",
+    "season": "Winter",
+    "stars": ["Pollux", "Castor", "Alhena", "Wasat"],
+    "origin": "Greek mythology; the Twins Castor and Pollux, sons of Leda and Zeus",
+    "image": "gemini.jpg"
+  },
+  {
+    "name": "Grus",
+    "nickname": "the Crane",
+    "hemisphere": "Southern",
+    "season": "Autumn",
+    "stars": ["Alnair", "Gruid", "Beta Gruis", "Delta Gruis"],
+    "origin": "Created by Petrus Plancius in the late 16th century; represents the Crane bird",
+    "image": "grus.jpg"
+  },
+  {
+    "name": "Hercules",
+    "nickname": "the Hero",
+    "hemisphere": "Northern",
+    "season": "Summer",
+    "stars": ["Kornephoros", "Rasalgethi", "Sarin", "Pi Herculis"],
+    "origin": "Greek mythology; the hero Hercules, known for his twelve labors",
+    "image": "hercules.jpg"
+  },
+  {
+    "name": "Horologium",
+    "nickname": "the Pendulum Clock",
+    "hemisphere": "Southern",
+    "season": "Winter",
+    "stars": ["Alpha Horologii", "R Horologii", "Beta Horologii"],
+    "origin": "Created by Nicolas Louis de Lacaille in 1756; represents a pendulum clock",
+    "image": "horologium.jpg"
+  },
+  {
+    "name": "Hydra",
+    "nickname": "the Sea Serpent",
+    "hemisphere": "Southern",
+    "season": "Spring",
+    "stars": ["Alphard", "Gamma Hydrae", "Zeta Hydrae", "Nu Hydrae"],
+    "origin": "Greek mythology; the Water Monster or sea serpent slain by Hercules",
+    "image": "hydra.jpg"
+  },
+  {
+    "name": "Hydrus",
+    "nickname": "the Water Snake",
+    "hemisphere": "Southern Circumpolar",
+    "season": "Winter",
+    "stars": ["Beta Hydri", "Alpha Hydri", "Gamma Hydri"],
+    "origin": "Created by Petrus Plancius in the late 16th century; represents the male water snake",
+    "image": "hydrus.jpg"
+  },
+  {
+    "name": "Indus",
+    "nickname": "the Indian",
+    "hemisphere": "Southern",
+    "season": "Autumn",
+    "stars": ["Alpha Indi", "Beta Indi", "Theta Indi", "Delta Indi"],
+    "origin": "Created by Petrus Plancius in the late 16th century; represents an Indian figure",
+    "image": "indus.jpg"
+  },
+  {
+    "name": "Lacerta",
+    "nickname": "the Lizard",
+    "hemisphere": "Northern",
+    "season": "Autumn",
+    "stars": ["Alpha Lacertae", "1 Lacertae", "5 Lacertae", "4 Lacertae"],
+    "origin": "Created by Johannes Hevelius in 1687; represents the Lizard",
+    "image": "lacerta.jpg"
+  },
+  {
+    "name": "Leo",
+    "nickname": "the Lion",
+    "hemisphere": "Northern",
+    "season": "Spring",
+    "stars": ["Regulus", "Denebola", "Algieba", "Zosma"],
+    "origin": "Greek mythology; the Nemean Lion slain by Hercules as his first labor",
+    "image": "leo.jpg"
+  },
+  {
+    "name": "Leo Minor",
+    "nickname": "the Lesser Lion",
+    "hemisphere": "Northern",
+    "season": "Spring",
+    "stars": ["Praecipua", "Beta Leonis Minoris", "21 Leonis Minoris"],
+    "origin": "Created by Johannes Hevelius in 1687; represents the Lesser Lion",
+    "image": "leo-minor.jpg"
+  },
+  {
+    "name": "Lepus",
+    "nickname": "the Hare",
+    "hemisphere": "Southern",
+    "season": "Winter",
+    "stars": ["Arneb", "Nihal", "Epsilon Leporis", "Mu Leporis"],
+    "origin": "Greek; the Hare, placed at Orion's feet in the sky",
+    "image": "lepus.jpg"
+  },
+  {
+    "name": "Libra",
+    "nickname": "the Scales",
+    "hemisphere": "Southern",
+    "season": "Summer",
+    "stars": ["Zubeneschamali", "Zubenelgenubi", "Brachium", "Zubenelhakrabi"],
+    "origin": "Roman; the Scales of Justice, originally part of Scorpius representing its claws",
+    "image": "libra.jpg"
+  },
+  {
+    "name": "Lupus",
+    "nickname": "the Wolf",
+    "hemisphere": "Southern",
+    "season": "Summer",
+    "stars": ["Alpha Lupi", "Beta Lupi", "Gamma Lupi", "Delta Lupi"],
+    "origin": "Greek; the Wolf, sometimes depicted as a wild animal impaled on a pole by Centaurus",
+    "image": "lupus.jpg"
+  },
+  {
+    "name": "Lynx",
+    "nickname": "the Lynx",
+    "hemisphere": "Northern",
+    "season": "Spring",
+    "stars": ["Alpha Lyncis", "38 Lyncis", "10 Ursae Majoris", "31 Lyncis"],
+    "origin": "Created by Johannes Hevelius in 1687; represents the Lynx, named because one needs the eyes of a lynx to see it",
+    "image": "lynx.jpg"
+  },
+  {
+    "name": "Lyra",
+    "nickname": "the Lyre",
+    "hemisphere": "Northern",
+    "season": "Summer",
+    "stars": ["Vega", "Sheliak", "Sulafat", "Delta Lyrae"],
+    "origin": "Greek mythology; the Lyre or Harp of Orpheus, given to him by Apollo",
+    "image": "lyra.jpg"
+  },
+  {
+    "name": "Mensa",
+    "nickname": "Table Mountain",
+    "hemisphere": "Southern Circumpolar",
+    "season": "Winter",
+    "stars": ["Alpha Mensae", "Gamma Mensae", "Beta Mensae"],
+    "origin": "Created by Nicolas Louis de Lacaille in 1756; represents Table Mountain in South Africa",
+    "image": "mensa.jpg"
+  },
+  {
+    "name": "Microscopium",
+    "nickname": "the Microscope",
+    "hemisphere": "Southern",
+    "season": "Autumn",
+    "stars": ["Gamma Microscopii", "Epsilon Microscopii", "Alpha Microscopii"],
+    "origin": "Created by Nicolas Louis de Lacaille in 1756; represents a microscope",
+    "image": "microscopium.jpg"
+  },
+  {
+    "name": "Monoceros",
+    "nickname": "the Unicorn",
+    "hemisphere": "Northern",
+    "season": "Winter",
+    "stars": ["Beta Monocerotis", "Alpha Monocerotis", "Gamma Monocerotis"],
+    "origin": "Created by Petrus Plancius in 1612; represents the mythical Unicorn",
+    "image": "monoceros.jpg"
+  },
+  {
+    "name": "Musca",
+    "nickname": "the Fly",
+    "hemisphere": "Southern Circumpolar",
+    "season": "Spring",
+    "stars": ["Alpha Muscae", "Beta Muscae", "Gamma Muscae", "Delta Muscae"],
+    "origin": "Created by Petrus Plancius in the late 16th century; represents the Fly",
+    "image": "musca.jpg"
+  },
+  {
+    "name": "Norma",
+    "nickname": "the Carpenter's Square",
+    "hemisphere": "Southern",
+    "season": "Summer",
+    "stars": ["Gamma Normae", "Epsilon Normae", "Iota Normae", "Eta Normae"],
+    "origin": "Created by Nicolas Louis de Lacaille in 1756; represents a carpenter's square or level",
+    "image": "norma.jpg"
+  },
+  {
+    "name": "Octans",
+    "nickname": "the Octant",
+    "hemisphere": "Southern Circumpolar",
+    "season": "Autumn",
+    "stars": ["Nu Octantis", "Beta Octantis", "Delta Octantis"],
+    "origin": "Created by Nicolas Louis de Lacaille in 1756; represents the octant navigation instrument",
+    "image": "octans.jpg"
+  },
+  {
+    "name": "Ophiuchus",
+    "nickname": "the Serpent Bearer",
+    "hemisphere": "Northern",
+    "season": "Summer",
+    "stars": ["Rasalhague", "Sabik", "Zeta Ophiuchi", "Yed Prior"],
+    "origin": "Greek mythology; the Serpent Bearer, often identified as Asclepius the healer",
+    "image": "ophiuchus.jpg"
+  },
+  {
+    "name": "Orion",
+    "nickname": "the Hunter",
+    "hemisphere": "Northern",
+    "season": "Winter",
+    "stars": ["Rigel", "Betelgeuse", "Bellatrix", "Alnilam"],
+    "origin": "Greek mythology; the great hunter Orion, placed in the sky by Zeus",
+    "image": "orion.jpg"
+  },
+  {
+    "name": "Pavo",
+    "nickname": "the Peacock",
+    "hemisphere": "Southern",
+    "season": "Autumn",
+    "stars": ["Peacock", "Beta Pavonis", "Delta Pavonis", "Eta Pavonis"],
+    "origin": "Created by Petrus Plancius in the late 16th century; represents the Peacock of Hera",
+    "image": "pavo.jpg"
+  },
+  {
+    "name": "Pegasus",
+    "nickname": "the Winged Horse",
+    "hemisphere": "Northern",
+    "season": "Autumn",
+    "stars": ["Enif", "Scheat", "Markab", "Algenib"],
+    "origin": "Greek mythology; the Winged Horse that sprang from Medusa's blood",
+    "image": "pegasus.jpg"
+  },
+  {
+    "name": "Perseus",
+    "nickname": "the Hero",
+    "hemisphere": "Northern",
+    "season": "Winter",
+    "stars": ["Mirfak", "Algol", "Zeta Persei", "Epsilon Persei"],
+    "origin": "Greek mythology; the Hero who slew Medusa and rescued Andromeda",
+    "image": "perseus.jpg"
+  },
+  {
+    "name": "Phoenix",
+    "nickname": "the Phoenix",
+    "hemisphere": "Southern",
+    "season": "Autumn",
+    "stars": ["Ankaa", "Beta Phoenicis", "Gamma Phoenicis", "Delta Phoenicis"],
+    "origin": "Created by Petrus Plancius in the late 16th century; represents the mythical Phoenix bird",
+    "image": "phoenix.jpg"
+  },
+  {
+    "name": "Pictor",
+    "nickname": "the Painter's Easel",
+    "hemisphere": "Southern",
+    "season": "Winter",
+    "stars": ["Alpha Pictoris", "Beta Pictoris", "Gamma Pictoris"],
+    "origin": "Created by Nicolas Louis de Lacaille in 1756; represents a painter's easel",
+    "image": "pictor.jpg"
+  },
+  {
+    "name": "Pisces",
+    "nickname": "the Fishes",
+    "hemisphere": "Northern",
+    "season": "Autumn",
+    "stars": ["Eta Piscium", "Gamma Piscium", "Omega Piscium", "Alpha Piscium"],
+    "origin": "Greek mythology; the Fishes, representing Aphrodite and Eros transformed to escape Typhon",
+    "image": "pisces.jpg"
+  },
+  {
+    "name": "Piscis Austrinus",
+    "nickname": "the Southern Fish",
+    "hemisphere": "Southern",
+    "season": "Autumn",
+    "stars": ["Fomalhaut", "Epsilon Piscis Austrini", "Delta Piscis Austrini"],
+    "origin": "Greek; the Southern Fish, parent of the fish in Pisces",
+    "image": "piscis-austrinus.jpg"
+  },
+  {
+    "name": "Puppis",
+    "nickname": "the Stern",
+    "hemisphere": "Southern",
+    "season": "Spring",
+    "stars": ["Naos", "Pi Puppis", "Rho Puppis", "Tau Puppis"],
+    "origin": "Part of the ancient constellation Argo Navis; represents the stern (poop deck) of Jason's ship",
+    "image": "puppis.jpg"
+  },
+  {
+    "name": "Pyxis",
+    "nickname": "the Compass",
+    "hemisphere": "Southern",
+    "season": "Spring",
+    "stars": ["Alpha Pyxidis", "Beta Pyxidis", "Gamma Pyxidis"],
+    "origin": "Created by Nicolas Louis de Lacaille in 1756; represents a mariner's compass",
+    "image": "pyxis.jpg"
+  },
+  {
+    "name": "Reticulum",
+    "nickname": "the Reticle",
+    "hemisphere": "Southern",
+    "season": "Winter",
+    "stars": ["Alpha Reticuli", "Beta Reticuli", "Epsilon Reticuli"],
+    "origin": "Created by Nicolas Louis de Lacaille in 1756; represents a reticle (eyepiece graticule)",
+    "image": "reticulum.jpg"
+  },
+  {
+    "name": "Sagitta",
+    "nickname": "the Arrow",
+    "hemisphere": "Northern",
+    "season": "Autumn",
+    "stars": ["Gamma Sagittae", "Delta Sagittae", "Zeta Sagittae", "Alpha Sagittae"],
+    "origin": "Greek mythology; the Arrow, variously attributed to Apollo, Hercules, or Cupid",
+    "image": "sagitta.jpg"
+  },
+  {
+    "name": "Sagittarius",
+    "nickname": "the Archer",
+    "hemisphere": "Southern",
+    "season": "Summer",
+    "stars": ["Kaus Australis", "Nunki", "Ascella", "Kaus Media"],
+    "origin": "Greek mythology; the Archer, often identified as the centaur Chiron or Crotus",
+    "image": "sagittarius.jpg"
+  },
+  {
+    "name": "Scorpius",
+    "nickname": "the Scorpion",
+    "hemisphere": "Southern",
+    "season": "Summer",
+    "stars": ["Antares", "Shaula", "Sargas", "Dschubba"],
+    "origin": "Greek mythology; the Scorpion sent by Gaia to kill Orion",
+    "image": "scorpius.jpg"
+  },
+  {
+    "name": "Sculptor",
+    "nickname": "the Sculptor",
+    "hemisphere": "Southern",
+    "season": "Autumn",
+    "stars": ["Alpha Sculptoris", "Beta Sculptoris", "Gamma Sculptoris"],
+    "origin": "Created by Nicolas Louis de Lacaille in 1756; represents a sculptor's studio",
+    "image": "sculptor.jpg"
+  },
+  {
+    "name": "Scutum",
+    "nickname": "the Shield",
+    "hemisphere": "Southern",
+    "season": "Summer",
+    "stars": ["Alpha Scuti", "Beta Scuti", "Zeta Scuti", "Gamma Scuti"],
+    "origin": "Created by Johannes Hevelius in 1684; represents the Shield of John III Sobieski",
+    "image": "scutum.jpg"
+  },
+  {
+    "name": "Serpens",
+    "nickname": "the Serpent",
+    "hemisphere": "Northern",
+    "season": "Summer",
+    "stars": ["Unukalhai", "Eta Serpentis", "Mu Serpentis", "Xi Serpentis"],
+    "origin": "Greek mythology; the Serpent held by Ophiuchus, symbol of healing",
+    "image": "serpens.jpg"
+  },
+  {
+    "name": "Sextans",
+    "nickname": "the Sextant",
+    "hemisphere": "Southern",
+    "season": "Spring",
+    "stars": ["Alpha Sextantis", "Gamma Sextantis", "Beta Sextantis"],
+    "origin": "Created by Johannes Hevelius in 1687; represents an astronomical sextant",
+    "image": "sextans.jpg"
+  },
+  {
+    "name": "Taurus",
+    "nickname": "the Bull",
+    "hemisphere": "Northern",
+    "season": "Winter",
+    "stars": ["Aldebaran", "Elnath", "Alcyone", "Zeta Tauri"],
+    "origin": "Greek mythology; the Bull, Zeus disguised to abduct Europa",
+    "image": "taurus.jpg"
+  },
+  {
+    "name": "Telescopium",
+    "nickname": "the Telescope",
+    "hemisphere": "Southern",
+    "season": "Summer",
+    "stars": ["Alpha Telescopii", "Zeta Telescopii", "Epsilon Telescopii"],
+    "origin": "Created by Nicolas Louis de Lacaille in 1756; represents a telescope",
+    "image": "telescopium.jpg"
+  },
+  {
+    "name": "Triangulum",
+    "nickname": "the Triangle",
+    "hemisphere": "Northern",
+    "season": "Winter",
+    "stars": ["Beta Trianguli", "Alpha Trianguli", "Gamma Trianguli"],
+    "origin": "Greek; the Triangle, representing the island of Sicily or the Nile delta",
+    "image": "triangulum.jpg"
+  },
+  {
+    "name": "Triangulum Australe",
+    "nickname": "the Southern Triangle",
+    "hemisphere": "Southern",
+    "season": "Summer",
+    "stars": ["Atria", "Beta Trianguli Australis", "Gamma Trianguli Australis"],
+    "origin": "Created by Petrus Plancius in the late 16th century; represents the Southern Triangle",
+    "image": "triangulum-australe.jpg"
+  },
+  {
+    "name": "Tucana",
+    "nickname": "the Toucan",
+    "hemisphere": "Southern",
+    "season": "Autumn",
+    "stars": ["Alpha Tucanae", "Gamma Tucanae", "Zeta Tucanae", "Beta Tucanae"],
+    "origin": "Created by Petrus Plancius in the late 16th century; represents the Toucan bird",
+    "image": "tucana.jpg"
+  },
+  {
+    "name": "Ursa Major",
+    "nickname": "the Great Bear",
+    "hemisphere": "Northern Circumpolar",
+    "season": "Spring",
+    "stars": ["Alioth", "Dubhe", "Alkaid", "Mizar"],
+    "origin": "Greek mythology; the Great Bear, Callisto transformed by Zeus to protect her from Hera",
+    "image": "ursa-major.jpg"
+  },
+  {
+    "name": "Ursa Minor",
+    "nickname": "the Little Bear",
+    "hemisphere": "Northern Circumpolar",
+    "season": "Summer",
+    "stars": ["Polaris", "Kochab", "Pherkad", "Epsilon Ursae Minoris"],
+    "origin": "Greek mythology; the Little Bear, Arcas son of Callisto, or one of the nurses of Zeus",
+    "image": "ursa-minor.jpg"
+  },
+  {
+    "name": "Vela",
+    "nickname": "the Sails",
+    "hemisphere": "Southern",
+    "season": "Spring",
+    "stars": ["Gamma Velorum", "Delta Velorum", "Kappa Velorum", "Lambda Velorum"],
+    "origin": "Part of the ancient constellation Argo Navis; represents the sails of Jason's ship",
+    "image": "vela.jpg"
+  },
+  {
+    "name": "Virgo",
+    "nickname": "the Maiden",
+    "hemisphere": "Southern",
+    "season": "Spring",
+    "stars": ["Spica", "Porrima", "Vindemiatrix", "Auva"],
+    "origin": "Greek mythology; the Maiden, associated with Demeter, Persephone, or Astraea",
+    "image": "virgo.jpg"
+  },
+  {
+    "name": "Volans",
+    "nickname": "the Flying Fish",
+    "hemisphere": "Southern Circumpolar",
+    "season": "Spring",
+    "stars": ["Gamma Volantis", "Beta Volantis", "Zeta Volantis", "Delta Volantis"],
+    "origin": "Created by Petrus Plancius in the late 16th century; represents the Flying Fish",
+    "image": "volans.jpg"
+  },
+  {
+    "name": "Vulpecula",
+    "nickname": "the Fox",
+    "hemisphere": "Northern",
+    "season": "Autumn",
+    "stars": ["Anser", "23 Vulpeculae", "31 Vulpeculae", "13 Vulpeculae"],
+    "origin": "Created by Johannes Hevelius in 1687; represents the Fox",
+    "image": "vulpecula.jpg"
+  }
+]

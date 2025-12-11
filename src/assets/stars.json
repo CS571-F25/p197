@@ -1,50 +1,823 @@
-[
+﻿[
   {
     "id": "sirius",
     "name": "Sirius",
-    "image": "sirius.svg",
-    "description": "Brightest star in the night sky, located in the constellation Canis Major.",
+    "type": "White Main Sequence",
+    "image": "sirius.jpg",
+    "description": "Brightest star in the night sky. Also known as the Dog Star, it is a binary system with a white dwarf companion.",
     "location": "Canis Major",
     "luminosity": 25.4
   },
   {
     "id": "betelgeuse",
     "name": "Betelgeuse",
-    "image": "betelgeuse.svg",
-    "description": "A red supergiant star in the constellation Orion, notable for its size and variability.",
+    "type": "Red Supergiant",
+    "image": "betelgeuse.jpg",
+    "description": "A red supergiant star in Orion, one of the largest stars visible to the naked eye. Notable for its variability and expected to go supernova.",
     "location": "Orion",
-    "luminosity": 1200
+    "luminosity": 126000
   },
   {
     "id": "polaris",
     "name": "Polaris",
-    "image": "polaris.svg",
-    "description": "Also known as the North Star, used for navigation because it sits nearly motionless in the sky.",
+    "type": "Yellow Supergiant",
+    "image": "polaris.jpg",
+    "description": "The North Star, a Cepheid variable star used for navigation. It marks the north celestial pole.",
     "location": "Ursa Minor",
-    "luminosity": 220
+    "luminosity": 1260
   },
   {
     "id": "vega",
     "name": "Vega",
-    "image": "vega.svg",
-    "description": "A bright star in the constellation Lyra, often used as a photometric standard.",
+    "type": "White Main Sequence",
+    "image": "vega.jpg",
+    "description": "Fifth brightest star in the sky and part of the Summer Triangle. Used as a photometric standard for calibrating brightness scales.",
     "location": "Lyra",
     "luminosity": 40
   },
   {
     "id": "rigel",
     "name": "Rigel",
-    "image": "rigel.svg",
-    "description": "A blue-white supergiant star in Orion, one of the brightest stars visible from Earth.",
+    "type": "Blue Supergiant",
+    "image": "rigel.jpg",
+    "description": "A blue-white supergiant marking Orion's left foot. One of the most luminous stars in our region of the Milky Way.",
     "location": "Orion",
     "luminosity": 120000
   },
   {
     "id": "antares",
     "name": "Antares",
-    "image": "antares.svg",
-    "description": "A red supergiant in the constellation Scorpius; often compared to Betelgeuse.",
+    "type": "Red Supergiant",
+    "image": "antares.jpg",
+    "description": "The heart of the Scorpion. Its name means 'rival of Mars' due to its reddish color. A variable star with a blue companion.",
     "location": "Scorpius",
-    "luminosity": 60000
+    "luminosity": 75900
+  },
+  {
+    "id": "alpheratz",
+    "name": "Alpheratz",
+    "type": "Blue Subgiant",
+    "image": "alpheratz.jpg",
+    "description": "The brightest star in Andromeda, also part of the Great Square of Pegasus. A binary star with a mercury-manganese star.",
+    "location": "Andromeda",
+    "luminosity": 200
+  },
+  {
+    "id": "mirach",
+    "name": "Mirach",
+    "type": "Red Giant",
+    "image": "mirach.jpg",
+    "description": "A red giant in Andromeda often used as a guide star to find the Andromeda Galaxy.",
+    "location": "Andromeda",
+    "luminosity": 1995
+  },
+  {
+    "id": "almach",
+    "name": "Almach",
+    "type": "Orange Giant",
+    "image": "almach.jpg",
+    "description": "A multiple star system in Andromeda known for its beautiful color contrast when viewed through a telescope.",
+    "location": "Andromeda",
+    "luminosity": 2000
+  },
+  {
+    "id": "altair",
+    "name": "Altair",
+    "type": "White Main Sequence",
+    "image": "altair.jpg",
+    "description": "Part of the Summer Triangle. One of the closest visible stars to Earth, known for its rapid rotation.",
+    "location": "Aquila",
+    "luminosity": 10.6
+  },
+  {
+    "id": "tarazed",
+    "name": "Tarazed",
+    "type": "Orange Giant",
+    "image": "tarazed.jpg",
+    "description": "A bright orange giant in Aquila, forming a line with Altair and Alshain.",
+    "location": "Aquila",
+    "luminosity": 2500
+  },
+  {
+    "id": "hamal",
+    "name": "Hamal",
+    "type": "Orange Giant",
+    "image": "hamal.jpg",
+    "description": "The brightest star in Aries, an orange giant once used to mark the vernal equinox.",
+    "location": "Aries",
+    "luminosity": 91
+  },
+  {
+    "id": "sheratan",
+    "name": "Sheratan",
+    "type": "White Main Sequence",
+    "image": "sheratan.jpg",
+    "description": "The second brightest star in Aries, a spectroscopic binary system.",
+    "location": "Aries",
+    "luminosity": 23
+  },
+  {
+    "id": "capella",
+    "name": "Capella",
+    "type": "Yellow Giant",
+    "image": "capella.jpg",
+    "description": "Sixth brightest star in the sky. A four-star system with two pairs of binary stars in Auriga.",
+    "location": "Auriga",
+    "luminosity": 78.7
+  },
+
+  {
+    "id": "menkalinan",
+    "name": "Menkalinan",
+    "type": "White Subgiant",
+    "image": "menkalinan.jpg",
+    "description": "The second brightest star in Auriga, an eclipsing binary star system.",
+    "location": "Auriga",
+    "luminosity": 95
+  },
+  {
+    "id": "arcturus",
+    "name": "Arcturus",
+    "type": "Orange Giant",
+    "image": "arcturus.jpg",
+    "description": "Fourth brightest star in the night sky. A red giant in BoÃ¶tes, easy to find by following the arc of the Big Dipper's handle.",
+    "location": "BoÃ¶tes",
+    "luminosity": 170
+  },
+  {
+    "id": "izar",
+    "name": "Izar",
+    "type": "Orange Giant",
+    "image": "izar.jpg",
+    "description": "A beautiful double star in BoÃ¶tes, known as Pulcherrima ('most beautiful') for its color contrast.",
+    "location": "BoÃ¶tes",
+    "luminosity": 400
+  },
+  {
+    "id": "tarf",
+    "name": "Tarf",
+    "type": "Orange Giant",
+    "image": "tarf.jpg",
+    "description": "The brightest star in Cancer, an orange giant with an exoplanet.",
+    "location": "Cancer",
+    "luminosity": 871
+  },
+  {
+    "id": "cor-caroli",
+    "name": "Cor Caroli",
+    "type": "White Main Sequence",
+    "image": "cor-caroli.jpg",
+    "description": "The brightest star in Canes Venatici, named 'Heart of Charles' after King Charles I of England.",
+    "location": "Canes Venatici",
+    "luminosity": 100
+  },
+  {
+    "id": "adhara",
+    "name": "Adhara",
+    "type": "Blue Giant",
+    "image": "adhara.jpg",
+    "description": "Second brightest star in Canis Major and one of the brightest ultraviolet sources in the sky.",
+    "location": "Canis Major",
+    "luminosity": 22300
+  },
+  {
+    "id": "wezen",
+    "name": "Wezen",
+    "type": "Yellow Supergiant",
+    "image": "wezen.jpg",
+    "description": "A yellow-white supergiant in Canis Major, one of the most luminous stars known.",
+    "location": "Canis Major",
+    "luminosity": 17000
+  },
+  {
+    "id": "procyon",
+    "name": "Procyon",
+    "type": "White Subgiant",
+    "image": "procyon.jpg",
+    "description": "Eighth brightest star in the sky. Part of the Winter Triangle, with a white dwarf companion.",
+    "location": "Canis Minor",
+    "luminosity": 6.93
+  },
+  {
+    "id": "gomeisa",
+    "name": "Gomeisa",
+    "type": "Blue Main Sequence",
+    "image": "gomeisa.jpg",
+    "description": "The second brightest star in Canis Minor, a hot blue-white star.",
+    "location": "Canis Minor",
+    "luminosity": 195
+  },
+  {
+    "id": "deneb-algedi",
+    "name": "Deneb Algedi",
+    "type": "White Giant",
+    "image": "deneb-algedi.jpg",
+    "description": "The brightest star in Capricornus, an eclipsing binary system.",
+    "location": "Capricornus",
+    "luminosity": 8.5
+  },
+  {
+    "id": "canopus",
+    "name": "Canopus",
+    "type": "White Supergiant",
+    "image": "canopus.jpg",
+    "description": "Second brightest star in the night sky. A white supergiant used for spacecraft navigation.",
+    "location": "Carina",
+    "luminosity": 10700
+  },
+  {
+    "id": "miaplacidus",
+    "name": "Miaplacidus",
+    "type": "White Giant",
+    "image": "miaplacidus.jpg",
+    "description": "Second brightest star in Carina, a blue-white giant star.",
+    "location": "Carina",
+    "luminosity": 288
+  },
+  {
+    "id": "schedar",
+    "name": "Schedar",
+    "type": "Orange Giant",
+    "image": "schedar.jpg",
+    "description": "The brightest star in Cassiopeia, an orange giant that may be slightly variable.",
+    "location": "Cassiopeia",
+    "luminosity": 676
+  },
+  {
+    "id": "caph",
+    "name": "Caph",
+    "type": "Yellow Giant",
+    "image": "caph.jpg",
+    "description": "A rapidly rotating giant star in Cassiopeia, part of the distinctive W-shape.",
+    "location": "Cassiopeia",
+    "luminosity": 27
+  },
+  {
+    "id": "alpha-centauri",
+    "name": "Alpha Centauri",
+    "type": "Yellow Main Sequence",
+    "image": "alpha-centauri.jpg",
+    "description": "The closest star system to the Sun. A triple star system including Proxima Centauri.",
+    "location": "Centaurus",
+    "luminosity": 1.519
+  },
+  {
+    "id": "hadar",
+    "name": "Hadar",
+    "type": "Blue Giant",
+    "image": "hadar.jpg",
+    "description": "Also known as Agena, the second brightest star in Centaurus and one of the hottest stars visible to the naked eye.",
+    "location": "Centaurus",
+    "luminosity": 41700
+  },
+  {
+    "id": "alderamin",
+    "name": "Alderamin",
+    "type": "White Main Sequence",
+    "image": "alderamin.jpg",
+    "description": "The brightest star in Cepheus, will become the pole star around 7500 CE.",
+    "location": "Cepheus",
+    "luminosity": 18
+  },
+  {
+    "id": "diphda",
+    "name": "Diphda",
+    "type": "Orange Giant",
+    "image": "diphda.jpg",
+    "description": "The brightest star in Cetus, an orange giant also known as Deneb Kaitos.",
+    "location": "Cetus",
+    "luminosity": 145
+  },
+  {
+    "id": "menkar",
+    "name": "Menkar",
+    "type": "Red Giant",
+    "image": "menkar.jpg",
+    "description": "A red giant marking the nose of Cetus the sea monster.",
+    "location": "Cetus",
+    "luminosity": 1455
+  },
+  {
+    "id": "mira",
+    "name": "Mira",
+    "type": "Red Giant",
+    "image": "mira.jpg",
+    "description": "A famous pulsating variable star, the prototype of Mira variables. Its brightness varies dramatically.",
+    "location": "Cetus",
+    "luminosity": 8400
+  },
+  {
+    "id": "alphecca",
+    "name": "Alphecca",
+    "type": "White Main Sequence",
+    "image": "alphecca.jpg",
+    "description": "The brightest star in Corona Borealis, an eclipsing binary also known as Gemma.",
+    "location": "Corona Borealis",
+    "luminosity": 60
+  },
+  {
+    "id": "gienah",
+    "name": "Gienah",
+    "type": "Blue Giant",
+    "image": "gienah.jpg",
+    "description": "The brightest star in Corvus, a blue giant star.",
+    "location": "Corvus",
+    "luminosity": 355
+  },
+  {
+    "id": "acrux",
+    "name": "Acrux",
+    "type": "Blue Subgiant",
+    "image": "acrux.jpg",
+    "description": "The brightest star in Crux, the Southern Cross. A multiple star system.",
+    "location": "Crux",
+    "luminosity": 25000
+  },
+  {
+    "id": "mimosa",
+    "name": "Mimosa",
+    "type": "Blue Giant",
+    "image": "mimosa.jpg",
+    "description": "The second brightest star in Crux, a Beta Cephei variable star.",
+    "location": "Crux",
+    "luminosity": 34000
+  },
+  {
+    "id": "gacrux",
+    "name": "Gacrux",
+    "type": "Red Giant",
+    "image": "gacrux.jpg",
+    "description": "A red giant in Crux, the closest red giant to the Sun.",
+    "location": "Crux",
+    "luminosity": 820
+  },
+  {
+    "id": "deneb",
+    "name": "Deneb",
+    "type": "Blue Supergiant",
+    "image": "deneb.jpg",
+    "description": "Part of the Summer Triangle. One of the most luminous stars known, marking the tail of Cygnus the Swan.",
+    "location": "Cygnus",
+    "luminosity": 196000
+  },
+  {
+    "id": "sadr",
+    "name": "Sadr",
+    "type": "Yellow Supergiant",
+    "image": "sadr.jpg",
+    "description": "A yellow supergiant at the center of the Northern Cross in Cygnus.",
+    "location": "Cygnus",
+    "luminosity": 33000
+  },
+  {
+    "id": "albireo",
+    "name": "Albireo",
+    "type": "Orange Giant",
+    "image": "albireo.jpg",
+    "description": "A beautiful double star at the head of Cygnus, famous for its contrasting gold and blue colors.",
+    "location": "Cygnus",
+    "luminosity": 950
+  },
+  {
+    "id": "eltanin",
+    "name": "Eltanin",
+    "type": "Orange Giant",
+    "image": "eltanin.jpg",
+    "description": "The brightest star in Draco, an orange giant in the dragon's head.",
+    "location": "Draco",
+    "luminosity": 471
+  },
+  {
+    "id": "thuban",
+    "name": "Thuban",
+    "type": "White Giant",
+    "image": "thuban.jpg",
+    "description": "An alpha star in Draco, was the pole star during ancient Egyptian times.",
+    "location": "Draco",
+    "luminosity": 479
+  },
+  {
+    "id": "achernar",
+    "name": "Achernar",
+    "type": "Blue Main Sequence",
+    "image": "achernar.jpg",
+    "description": "The brightest star in Eridanus and ninth brightest in the sky. One of the flattest stars known due to rapid rotation.",
+    "location": "Eridanus",
+    "luminosity": 3150
+  },
+  {
+    "id": "pollux",
+    "name": "Pollux",
+    "type": "Orange Giant",
+    "image": "pollux.jpg",
+    "description": "The brightest star in Gemini and nearest giant star to the Sun. Has a confirmed exoplanet.",
+    "location": "Gemini",
+    "luminosity": 43
+  },
+  {
+    "id": "castor",
+    "name": "Castor",
+    "type": "White Main Sequence",
+    "image": "castor.jpg",
+    "description": "A sextuple star system in Gemini, one of the brightest multiple star systems in the sky.",
+    "location": "Gemini",
+    "luminosity": 49
+  },
+  {
+    "id": "alhena",
+    "name": "Alhena",
+    "type": "White Subgiant",
+    "image": "alhena.jpg",
+    "description": "Third brightest star in Gemini, a spectroscopic binary at the foot of the twin Pollux.",
+    "location": "Gemini",
+    "luminosity": 123
+  },
+  {
+    "id": "alnair",
+    "name": "Alnair",
+    "type": "Blue Subgiant",
+    "image": "alnair.jpg",
+    "description": "The brightest star in Grus the Crane, a hot blue-white star.",
+    "location": "Grus",
+    "luminosity": 263
+  },
+  {
+    "id": "kornephoros",
+    "name": "Kornephoros",
+    "type": "Yellow Giant",
+    "image": "kornephoros.jpg",
+    "description": "The brightest star in Hercules, a yellow giant in the hero's shoulder.",
+    "location": "Hercules",
+    "luminosity": 151
+  },
+  {
+    "id": "rasalgethi",
+    "name": "Rasalgethi",
+    "type": "Red Supergiant",
+    "image": "rasalgethi.jpg",
+    "description": "A variable red supergiant in Hercules, one of the largest stars known.",
+    "location": "Hercules",
+    "luminosity": 17000
+  },
+  {
+    "id": "alphard",
+    "name": "Alphard",
+    "type": "Orange Giant",
+    "image": "alphard.jpg",
+    "description": "The brightest star in Hydra, the Solitary One, an orange giant.",
+    "location": "Hydra",
+    "luminosity": 780
+  },
+  {
+    "id": "regulus",
+    "name": "Regulus",
+    "type": "Blue Main Sequence",
+    "image": "regulus.jpg",
+    "description": "The brightest star in Leo and the heart of the lion. A quadruple star system.",
+    "location": "Leo",
+    "luminosity": 288
+  },
+  {
+    "id": "denebola",
+    "name": "Denebola",
+    "type": "White Main Sequence",
+    "image": "denebola.jpg",
+    "description": "The second brightest star in Leo, marking the lion's tail.",
+    "location": "Leo",
+    "luminosity": 12
+  },
+  {
+    "id": "algieba",
+    "name": "Algieba",
+    "type": "Orange Giant",
+    "image": "algieba.jpg",
+    "description": "A beautiful double star in Leo's mane, consisting of two orange giants.",
+    "location": "Leo",
+    "luminosity": 320
+  },
+  {
+    "id": "arneb",
+    "name": "Arneb",
+    "type": "White Supergiant",
+    "image": "arneb.jpg",
+    "description": "The brightest star in Lepus, a white supergiant near Orion.",
+    "location": "Lepus",
+    "luminosity": 32000
+  },
+  {
+    "id": "zubeneschamali",
+    "name": "Zubeneschamali",
+    "type": "Blue Main Sequence",
+    "image": "zubeneschamali.jpg",
+    "description": "The brightest star in Libra, known for its alleged green color, unique among bright stars.",
+    "location": "Libra",
+    "luminosity": 130
+  },
+  {
+    "id": "zubenelgenubi",
+    "name": "Zubenelgenubi",
+    "type": "White Main Sequence",
+    "image": "zubenelgenubi.jpg",
+    "description": "A double star in Libra whose name means 'the southern claw', from when Libra was part of Scorpius.",
+    "location": "Libra",
+    "luminosity": 71
+  },
+  {
+    "id": "sheliak",
+    "name": "Sheliak",
+    "type": "Blue Giant",
+    "image": "sheliak.jpg",
+    "description": "A famous eclipsing binary in Lyra, prototype of the Beta Lyrae variables.",
+    "location": "Lyra",
+    "luminosity": 2200
+  },
+  {
+    "id": "rasalhague",
+    "name": "Rasalhague",
+    "type": "White Main Sequence",
+    "image": "rasalhague.jpg",
+    "description": "The brightest star in Ophiuchus, marking the head of the serpent bearer.",
+    "location": "Ophiuchus",
+    "luminosity": 25
+  },
+  {
+    "id": "bellatrix",
+    "name": "Bellatrix",
+    "type": "Blue Giant",
+    "image": "bellatrix.jpg",
+    "description": "The third brightest star in Orion, marking the hunter's left shoulder. Known as the Amazon Star.",
+    "location": "Orion",
+    "luminosity": 9211
+  },
+  {
+    "id": "alnilam",
+    "name": "Alnilam",
+    "type": "Blue Supergiant",
+    "image": "alnilam.jpg",
+    "description": "The middle star of Orion's Belt, one of the most luminous stars visible to the naked eye.",
+    "location": "Orion",
+    "luminosity": 537000
+  },
+  {
+    "id": "peacock",
+    "name": "Peacock",
+    "type": "Blue Main Sequence",
+    "image": "peacock.jpg",
+    "description": "The brightest star in Pavo, a blue star with a unique proper name.",
+    "location": "Pavo",
+    "luminosity": 2200
+  },
+  {
+    "id": "enif",
+    "name": "Enif",
+    "type": "Orange Supergiant",
+    "image": "enif.jpg",
+    "description": "The brightest star in Pegasus, an orange supergiant marking the horse's nose.",
+    "location": "Pegasus",
+    "luminosity": 12250
+  },
+  {
+    "id": "scheat",
+    "name": "Scheat",
+    "type": "Red Giant",
+    "image": "scheat.jpg",
+    "description": "A red giant in Pegasus, part of the Great Square of Pegasus.",
+    "location": "Pegasus",
+    "luminosity": 1500
+  },
+  {
+    "id": "markab",
+    "name": "Markab",
+    "type": "Blue Giant",
+    "image": "markab.jpg",
+    "description": "Part of the Great Square of Pegasus, a blue giant star.",
+    "location": "Pegasus",
+    "luminosity": 165
+  },
+  {
+    "id": "mirfak",
+    "name": "Mirfak",
+    "type": "Yellow Supergiant",
+    "image": "mirfak.jpg",
+    "description": "The brightest star in Perseus, a yellow supergiant in the Alpha Persei Cluster.",
+    "location": "Perseus",
+    "luminosity": 5000
+  },
+  {
+    "id": "algol",
+    "name": "Algol",
+    "type": "Blue Main Sequence",
+    "image": "algol.jpg",
+    "description": "The Demon Star, a famous eclipsing binary in Perseus. Known for its regular dimming.",
+    "location": "Perseus",
+    "luminosity": 182
+  },
+  {
+    "id": "ankaa",
+    "name": "Ankaa",
+    "type": "Orange Giant",
+    "image": "ankaa.jpg",
+    "description": "The brightest star in Phoenix, an orange giant.",
+    "location": "Phoenix",
+    "luminosity": 52
+  },
+  {
+    "id": "fomalhaut",
+    "name": "Fomalhaut",
+    "type": "White Main Sequence",
+    "image": "fomalhaut.jpg",
+    "description": "One of the brightest stars with a famous debris disk. First star with a directly imaged exoplanet.",
+    "location": "Piscis Austrinus",
+    "luminosity": 16.63
+  },
+  {
+    "id": "naos",
+    "name": "Naos",
+    "type": "Blue Supergiant",
+    "image": "naos.jpg",
+    "description": "The brightest star in Puppis, one of the hottest stars visible to the naked eye.",
+    "location": "Puppis",
+    "luminosity": 870000
+  },
+  {
+    "id": "kaus-australis",
+    "name": "Kaus Australis",
+    "type": "Blue Giant",
+    "image": "kaus-australis.jpg",
+    "description": "The brightest star in Sagittarius, marking the southern part of the archer's bow.",
+    "location": "Sagittarius",
+    "luminosity": 375
+  },
+  {
+    "id": "nunki",
+    "name": "Nunki",
+    "type": "Blue Giant",
+    "image": "nunki.jpg",
+    "description": "Second brightest star in Sagittarius, one of the oldest named stars.",
+    "location": "Sagittarius",
+    "luminosity": 3300
+  },
+  {
+    "id": "shaula",
+    "name": "Shaula",
+    "type": "Blue Subgiant",
+    "image": "shaula.jpg",
+    "description": "Second brightest star in Scorpius, marking the scorpion's stinger.",
+    "location": "Scorpius",
+    "luminosity": 36300
+  },
+  {
+    "id": "unukalhai",
+    "name": "Unukalhai",
+    "type": "Orange Giant",
+    "image": "unukalhai.jpg",
+    "description": "The brightest star in Serpens, marking the serpent's neck.",
+    "location": "Serpens",
+    "luminosity": 38
+  },
+  {
+    "id": "aldebaran",
+    "name": "Aldebaran",
+    "type": "Orange Giant",
+    "image": "aldebaran.jpg",
+    "description": "The eye of the Bull in Taurus, an orange giant and one of the brightest stars. Has an exoplanet.",
+    "location": "Taurus",
+    "luminosity": 518
+  },
+  {
+    "id": "elnath",
+    "name": "Elnath",
+    "type": "Blue Giant",
+    "image": "elnath.jpg",
+    "description": "The second brightest star in Taurus, marking the tip of the bull's northern horn.",
+    "location": "Taurus",
+    "luminosity": 700
+  },
+  {
+    "id": "alcyone",
+    "name": "Alcyone",
+    "type": "Blue Giant",
+    "image": "alcyone.jpg",
+    "description": "The brightest star in the Pleiades cluster, a blue giant in Taurus.",
+    "location": "Taurus",
+    "luminosity": 2400
+  },
+  {
+    "id": "atria",
+    "name": "Atria",
+    "type": "Orange Giant",
+    "image": "atria.jpg",
+    "description": "The brightest star in Triangulum Australe, the Southern Triangle.",
+    "location": "Triangulum Australe",
+    "luminosity": 5500
+  },
+  {
+    "id": "alioth",
+    "name": "Alioth",
+    "type": "White Main Sequence",
+    "image": "alioth.jpg",
+    "description": "The brightest star in Ursa Major and part of the Big Dipper's handle.",
+    "location": "Ursa Major",
+    "luminosity": 108
+  },
+  {
+    "id": "dubhe",
+    "name": "Dubhe",
+    "type": "Orange Giant",
+    "image": "dubhe.jpg",
+    "description": "One of the pointer stars in the Big Dipper, used to find Polaris.",
+    "location": "Ursa Major",
+    "luminosity": 316
+  },
+  {
+    "id": "alkaid",
+    "name": "Alkaid",
+    "type": "Blue Main Sequence",
+    "image": "alkaid.jpg",
+    "description": "The end star of the Big Dipper's handle, a hot blue star.",
+    "location": "Ursa Major",
+    "luminosity": 594
+  },
+  {
+    "id": "mizar",
+    "name": "Mizar",
+    "type": "White Main Sequence",
+    "image": "mizar.jpg",
+    "description": "Famous double star in the Big Dipper, paired with Alcor. A sextuple star system.",
+    "location": "Ursa Major",
+    "luminosity": 33.3
+  },
+  {
+    "id": "kochab",
+    "name": "Kochab",
+    "type": "Orange Giant",
+    "image": "kochab.jpg",
+    "description": "Second brightest star in Ursa Minor, was the pole star around 1500 BCE.",
+    "location": "Ursa Minor",
+    "luminosity": 390
+  },
+  {
+    "id": "spica",
+    "name": "Spica",
+    "type": "Blue Giant",
+    "image": "spica.jpg",
+    "description": "The brightest star in Virgo, representing the ear of wheat. A close binary system.",
+    "location": "Virgo",
+    "luminosity": 12100
+  },
+  {
+    "id": "porrima",
+    "name": "Porrima",
+    "type": "White Main Sequence",
+    "image": "porrima.jpg",
+    "description": "A beautiful double star in Virgo with two nearly identical white stars.",
+    "location": "Virgo",
+    "luminosity": 4.85
+  },
+  {
+    "id": "sadalsuud",
+    "name": "Sadalsuud",
+    "type": "Yellow Supergiant",
+    "image": "sadalsuud.jpg",
+    "description": "The brightest star in Aquarius, a rare yellow supergiant.",
+    "location": "Aquarius",
+    "luminosity": 2200
+  },
+  {
+    "id": "sadalmelik",
+    "name": "Sadalmelik",
+    "type": "Yellow Supergiant",
+    "image": "sadalmelik.jpg",
+    "description": "Second brightest star in Aquarius, another rare yellow supergiant.",
+    "location": "Aquarius",
+    "luminosity": 3000
+  },
+  {
+    "id": "phact",
+    "name": "Phact",
+    "type": "Blue Subgiant",
+    "image": "phact.jpg",
+    "description": "The brightest star in Columba the Dove.",
+    "location": "Columba",
+    "luminosity": 545
+  },
+  {
+    "id": "rotanev",
+    "name": "Rotanev",
+    "type": "White Subgiant",
+    "image": "rotanev.jpg",
+    "description": "Brightest star in Delphinus. Its name is 'Venator' spelled backwards, after astronomer Nicolaus Venator.",
+    "location": "Delphinus",
+    "luminosity": 24
+  },
+  {
+    "id": "sualocin",
+    "name": "Sualocin",
+    "type": "Blue Main Sequence",
+    "image": "sualocin.jpg",
+    "description": "Second brightest in Delphinus. Named 'Nicolaus' backwards after astronomer Nicolaus Cacciatore.",
+    "location": "Delphinus",
+    "luminosity": 180
   }
 ]
+
